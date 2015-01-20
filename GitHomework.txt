@@ -1,0 +1,17 @@
+Homework from January 13 2015
+
+2.13.3
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ #remove the first 264 lines and the lines from 13900 onward
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ touch darwin.txt
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ tail -n+264 otoos10.txt | head -n+13900 otoos10.txt > darwin.txt
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ #count occurrences in darwin.txt of the terms "evolution" or "evolved", appearing as full words and ignoring case
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ grep -o -i -w evolution darwin.txt | wc -l
+0
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ grep -o -i -w evolved darwin.txt | wc -l
+1
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ #count the occurrences of "natural selection" and "Wallace"
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ grep -o -i -w natural.selection darwin.txt | wc -l
+242
+vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ grep -o -i -w wallace darwin.txt | wc -l
+4
+
