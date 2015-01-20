@@ -15,3 +15,28 @@ vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ grep -o -i -w natural
 vagrant@data-science-toolbox:~/introscicomp2014/UNIX/Data$ grep -o -i -w wallace darwin.txt | wc -l
 4
 
+
+
+Homework from Week 1
+Exercise 2.13.1 
+
+1.	ls [A-Z]* 
+•	Lists all files in the current directory that begin with any capital letter and are zero or more characters.
+2.	Cp *.sh /tmp 
+•	Copy files ending in “.sh” to the temporary files directory.
+3.	man pwd
+•	Show help page for the command “pwd”, which stands for “print working directory”.
+4.	cd ~ 
+•	Change the working directory back to the home directory. 
+5.	mkdir –p /test1/test2/test3 
+•	Create directories named test 1, test 2, test 3 if they do not already exist.
+6.	cp –r /tmp .
+•	Copy the temporary files directory recursively. 
+7.	ls | less 
+•	List the files in the directory by progressively printing the files on the screen. The two commands are concatenated using the “|” symbol. 
+8.	head –n 24 test.txt » abc.txt 
+•	Print the first 24 lines of the file, “test.txt” to the file, “abc.txt”. If the “abc.txt” file does not exist, it will be created. 
+9.	echo “aaa” > aaa.txt
+•	Print “aaa” to the file aaa.txt. If the file already exists, it will be overwritten.
+
+
